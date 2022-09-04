@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px; 
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243,243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.background-instagram{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.phone img {
+    height: 40rem;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 25rem;
+}
+
+.email-senha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(230, 225, 225);
+    width: 85%;
+    padding: 1.0rem 0; 
+    border: 1px solid lightgray;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    padding: 1.5rem 0; 
+    border: 1px solid lightgray;
+}
+
+.email-senha {
+    text-transform: lowercase;
+    color: darkgray;
+    margin-top: 8px;
+}
+
+.entrar {
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 85%;
+    padding: 4%;
+}
+
+.entrar {
+    background-color: blue;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+.esqueceu {
+    color: rgb(4, 4, 128);
+    margin-top: 8px;
+}
+
+.group:nth-child(1) {
+    min-height: 12rem;
+}
+
+.group:nth-child(2) {
+    margin-top: 10px;
+}
+
+.logo {
+    height: 3rem;
+
+}
+
+.linkazul {
+    color: blue;
+    margin-left: 5px;
+}
+
+.download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1,3rem 0;
+    margin-top: 10px;
+}
+
+.app {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.download-app {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.download-app:nth-child(1){
+    background-image: url("./img/apple-button.png");
+    margin-right: 4px;   
+}
+
+.download-app:nth-child(2){
+    background-image: url("./img/googleplay-button.png");
+    margin-left: 4px;
+}
+/* media queries */
+
+@media (max-width: 1024px){
+    body {
+        background-color: #fff;
+    }
+
+    .background-instagram {
+        width: 60%;
+    }
+}
+
+@media (max-width: 650px) {
+    .background-instagram {
+        width: 60%;
+    }
+
+    .phone{
+        display: none;
+    }
+    .login{
+        width: 100%;
+    }
+    
+    .group{
+        border: 2px solid transparent;
+    }
+}
